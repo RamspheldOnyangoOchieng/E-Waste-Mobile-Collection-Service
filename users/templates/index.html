@@ -1,0 +1,71 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E-Waste Mobile Collection Service</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">E-Waste Collection</div>
+        <ul class="nav-links">
+            <li><a href="{% url 'dashboard' %}">Dashboard</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#incentives">Incentives</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="{% url 'login' %}">Login</a></li>
+            <li><a href="{% url 'signup' %}">Signup</a></li>
+
+        </ul>
+       <a href="{% url 'dashboard' %}"> <button class="cta-btn">Schedule Pickup</button>
+       </nav></a>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <h1>Recycle Your Old Electronics, Protect the Planet</h1>
+            <p>Schedule a pickup for your e-waste today. It's easy, fast, and eco-friendly!</p>
+            <a href="{% url 'dashboard' %}" class="cta-btn">Schedule Pickup Now</a>
+        </div>
+    </header>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <h3>Step 1</h3>
+                <p>Schedule your pickup with a few clicks.</p>
+            </div>
+            <div class="step">
+                <h3>Step 2</h3>
+                <p>We collect your e-waste at your convenience.</p>
+            </div>
+            <div class="step">
+                <h3>Step 3</h3>
+                <p>Your e-waste is recycled responsibly and safely.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Incentives Section -->
+    <section class="incentives" id="incentives">
+        <h2>Get Rewards for Recycling</h2>
+        <p>Earn points for every successful pickup and redeem them for discounts, gift cards, or donations to environmental causes.</p>
+        <a href="#schedule" class="cta-btn">Start Earning Now</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 E-Waste Collection | All Rights Reserved</p>
+        <p>Follow us on social media: <a href="#">Facebook</a>, <a href="#">Twitter</a></p>
+    </footer>
+
+    <script src="{% static 'js/index.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - E-Waste Collection</title>
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <h2>E-Waste Dashboard</h2>
+            <ul>
+                <li><a href="#overview" class="active">Overview</a></li>
+                <li><a href="#requests">Pickup Requests</a></li>
+                <li><a href="#analytics">Analytics</a></li>
+                <li><a href="#users">User Management</a></li>
+                <li><a href="#settings">Settings</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <h1>Welcome to Your Dashboard</h1>
+                <div class="user-profile">
+                    <span>Admin</span>
+                    <img src="profile-pic.jpg" alt="Profile">
+                </div>
+            </header>
+
+            <!-- Overview Section -->
+            <section class="overview" id="overview">
+                <h2>Quick Overview</h2>
+                <div class="stats">
+                    <div class="stat-card">
+                        <h3>Total Requests</h3>
+                        <p id="total-requests">124</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Completed Pickups</h3>
+                        <p id="completed-pickups">78</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Pending Pickups</h3>
+                        <p id="pending-pickups">46</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Recent Activities -->
+            <section class="recent-activities" id="requests">
+                <h2>Recent Pickup Requests</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type of E-Waste</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="recent-requests">
+                        <tr>
+                            <td>John Doe</td>
+                            <td>Electronics</td>
+                            <td>2024-12-20</td>
+                            <td>Pending</td>
+                        </tr>
+                        <tr>
+                            <td>Jane Smith</td>
+                            <td>Batteries</td>
+                            <td>2024-12-19</td>
+                            <td>Completed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <script src="{% static 'js/dashboard.js' %}"></script>
+</body>
+</html>
