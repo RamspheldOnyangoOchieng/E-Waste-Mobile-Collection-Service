@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnviroServe Kenya - E-Waste Collection</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to EnviroServe Kenya E-Waste Collection Service</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'learnmore' %}">Learn More</a></li>
+                <li><a href="{% url 'login' %}">Login</a></li>
+                <li><a href="{% url 'register' %}">Register</a></li>
+                <li><a href="{% url 'contactus' %}">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>E-Waste Collection Made Easy</h2>
+        <p>Request a pickup or find the nearest collection point.</p>
+        <button><a href="{% url 'request_pickup' %}">Schedule a Pickup</a></button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 EnviroServe Kenya. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
