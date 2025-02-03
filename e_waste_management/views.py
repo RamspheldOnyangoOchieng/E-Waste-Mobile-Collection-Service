@@ -3,6 +3,9 @@ from django.shortcuts import render
 def home(request):
     return render(request, 'home.html')
 
+def about(request):
+    return render(request, 'about.html')
+
 def learnmore(request):
     return render(request, 'learnmore.html')
 
@@ -17,3 +20,6 @@ def pickup(request):
 
 def contactus(request):
     return render(request, 'contactus.html')
+
+def resetpassword(request):
+    return render(request, 'resetpassword.html')

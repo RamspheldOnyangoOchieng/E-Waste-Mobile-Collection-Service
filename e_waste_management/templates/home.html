@@ -9,25 +9,79 @@
 </head>
 <body>
     <header>
+<div class="header">
+    <img src="{% static 'images/ewaste_logo.jpg' %}" alt="My Image" class="image">
+
        
         <nav>
-            <ul>
-                <li><a href="{% url 'home' %}">Home</a></li>
-                <li><a href="{% url 'learnmore' %}">Learn More</a></li>
-                <li><a href="{% url 'login' %}">Login</a></li>
-                <li><a href="{% url 'register' %}">Register</a></li>
-                <li><a href="{% url 'contactus' %}">Contact Us</a></li>
+            <ul class="menu">
+                <li><a href="{% url 'home' %}" style="margin-right: 10px;
+                margin-left: 750px; color: white;"
+                onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">Home</a></li>
+                <li><a href="{% url 'about' %}" style="margin-right: 10px; color: white;"
+                    onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">About Us</a></li>
+                <li><a href="{% url 'learnmore' %}" style="margin-right: 10px; color: white;"
+                    onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">How it works</a></li>
+                <li><a href="{% url 'login' %}" style="margin-right: 10px; color: white;"
+                    onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">Login</a></li>
+                <li><a href="{% url 'register' %}" style="margin-right: 10px; color: white;"
+                    onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">Register</a></li>
+                <li><a href="{% url 'contactus' %}" style="margin-right: 10px; color: white;"
+                    onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">Contact Us</a></li>
             </ul>
         </nav>
+</div>
     </header>
 
     <section>
-        <h2>E-Waste Collection Made Easy</h2>
-        <p>Request a pickup or find the nearest collection point.</p>
-        <button><a href="{% url 'pickup' %}">Schedule a Pickup</a></button>
+        
+        <p style="font-size: 50px; color: rgb(10, 207, 10);" class="moving-text">Welcome to EnviroServe Kenya Company LTD</p>
+        
+        <div class="buttons">
+            <button style="padding: 10px; border-radius: 50px;
+            border: none; background-color: rgb(0, 140, 255); "><a href="{% url 'pickup' %}" 
+            style="color: white;"
+            onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">Schedule a Pickup</a></button>
+            <button style="padding: 10px; border-radius: 50px;
+            border: none; background-color: rgb(0, 140, 255); color: white;"
+            onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">Track recycling</button>
+            <button style="padding: 10px; border-radius: 50px;
+            border: none; background-color: rgb(0, 140, 255);">
+            <a href="{% url 'learnmore' %}" style="color: white;"
+            onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">Learn More</a></button>
+        </div>
+
+        <p>Overview of the service’s benefits:</p>
+        <ul>
+            <li> Convenient</li>
+            <li>Eco-friendly</li>
+            <li>Rewarding</li>
+        </ul>
+        <h2>Educational content</h2>
+        <p>The growing amount of electronic waste (e-waste) has become a significant environmental
+             concern worldwide. Improper disposal of electronic devices contributes to hazardous waste 
+             and environmental pollution, impacting both land and water sources. E-waste contains toxic 
+             substances like lead, mercury, and cadmium, which can leach into the environment, causing 
+             long-term damage to ecosystems and human health. With rapid advancements in technology, 
+             people are constantly 
+            upgrading their electronic devices, which leads to an increase in e-waste.</p>
     </section>
 
     <footer>
+        <h3>Contacts</h3>
+        <p>Phone: 0781567890</p>
+        <p>Phone: 0722345678</p>
+        <p>Location: Nyeri, Kenya</p>
+        <p>Email: enviroServeKenyaCompanyLTD@gmail.com</p>
+        <h3>Social Media Platforms</h3>
+        <h3>Follow Us</h3>
+        <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>LinkedIn</li>
+        </ul>
+
         <p>&copy; 2025 EnviroServe Kenya. All Rights Reserved.</p>
     </footer>
 </body>

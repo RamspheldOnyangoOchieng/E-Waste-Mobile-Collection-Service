@@ -1,3 +1,35 @@
 body{
-background-color:#f8cb72;
+    margin: 0px;
 }
+.header{
+    display: flex;
+    background-color: green;
+}
+.image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-left: 10px;
+}
+.menu{
+    display: flex;
+    list-style-type: none; 
+    margin-top: 30px;
+}
+.buttons{
+    text-align: center; 
+    word-spacing: 10px;
+}
+.moving-text {
+    font-size: 30px;
+    font-weight: bold;
+    white-space: nowrap; /* Prevents text from wrapping */
+    animation: moveText 5s linear infinite; /* Animation applied */
+  }
+  @keyframes moveText {
+    0% {
+      transform: translateX(100%); /* Start from right */
+    }
+    100% {
+      transform: translateX(-100%); /* End at left */
+    }}

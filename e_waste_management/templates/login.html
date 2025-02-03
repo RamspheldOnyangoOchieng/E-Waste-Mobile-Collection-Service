@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+</head>
+<body>
+
+<div >
+    <h1>Login</h1>
+    <form action="#" method="POST">
+        <p><input type="text" placeholder="Username" name="username" required></p>
+        <p><input type="password" placeholder="Password" name="password" required></p>
+        <button type="submit" class="btn">Login</button>
+        <p><a href="{% url 'resetpassword' %}">Forgot Password?</a></p>
+        <p>Don't have an account?</p>
+        <a href="{% url 'register' %}">Register</a>
+    </form>
+</div>
+
+</body>
+</html>
