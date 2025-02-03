@@ -37,34 +37,122 @@
         
         <p style="font-size: 50px; color: rgb(10, 207, 10);" class="moving-text">Welcome to EnviroServe Kenya Company LTD</p>
         
-        <div class="buttons">
-            <button style="padding: 10px; border-radius: 50px;
+        <div>
+            <button style="padding: 10px; border-radius: 50px; margin-left: 285px;
             border: none; background-color: rgb(0, 140, 255); "><a href="{% url 'pickup' %}" 
             style="color: white;"
             onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">Schedule a Pickup</a></button>
-            <button style="padding: 10px; border-radius: 50px;
+
+            <button style="padding: 10px; border-radius: 50px; margin-left: 540px;
             border: none; background-color: rgb(0, 140, 255); color: white;"
             onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">Track recycling</button>
-            <button style="padding: 10px; border-radius: 50px;
-            border: none; background-color: rgb(0, 140, 255);">
-            <a href="{% url 'learnmore' %}" style="color: white;"
-            onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">Learn More</a></button>
         </div>
 
-        <p>Overview of the service’s benefits:</p>
-        <ul>
-            <li> Convenient</li>
-            <li>Eco-friendly</li>
-            <li>Rewarding</li>
-        </ul>
-        <h2>Educational content</h2>
-        <p>The growing amount of electronic waste (e-waste) has become a significant environmental
-             concern worldwide. Improper disposal of electronic devices contributes to hazardous waste 
-             and environmental pollution, impacting both land and water sources. E-waste contains toxic 
-             substances like lead, mercury, and cadmium, which can leach into the environment, causing 
-             long-term damage to ecosystems and human health. With rapid advancements in technology, 
-             people are constantly 
-            upgrading their electronic devices, which leads to an increase in e-waste.</p>
+        <div style="display: flex; display: flex; justify-content: center;
+         align-items: center; text-align: center;">
+            <div style="  width: 300px;
+            height: 190px;
+            padding: 20px;
+            background-color: #f0f0f0;;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+            border-radius: 10px;
+            overflow: auto; margin: 20px;">
+                <h3>Schedule a Pickup</h3>
+                <p> This button allows users to request an e-waste pickup service from their location. 
+                    It links to a form where users can provide details like their address, 
+                    contact information, type of electronic waste, and preferred pickup date.</p>
+            </div>
+
+            <div style="display: flex; justify-content: center; align-items: center; text-align: center; ">
+                <div style="display: flex; justify-content: center; align-items: center;  margin: 20px;">
+                    <div style="width: 200px; height: 200px; border-radius: 50%; 
+                    background-color: #f0f0f0; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); display: flex; 
+                    justify-content: center; align-items: center; text-align: center; padding: 20px;">
+                    <div>     <p>Overview of the service’s benefits:</p>
+                        <ul>
+                            <li> Convenient</li>
+                            <li>Eco-friendly</li>
+                            <li>Rewarding</li>
+                        </ul></div>
+                    </div>
+                </div>
+
+                <div style="width: 300px;
+            height: 190px;
+            padding: 20px;
+            background-color: #f0f0f0;;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+            border-radius: 10px;
+            overflow: auto; margin: 20px;">
+                    <h3>Track recycling</h3>
+                    <p> This button allows users to monitor the status of their e-waste collection requests. 
+                        Once a request has been made, users can click this button to check where their e-waste is in the 
+                        process, whether it is scheduled, in-progress, or completed.</p>
+                </div>
+        </div>
+    </div>
+
+    <span class="arrow wobble"></span>
+    <button style="padding: 10px; border-radius: 50px;
+    border: none; background-color: rgb(0, 140, 255); margin-left: 640px; margin-top: 70px;">
+    <a href="{% url 'learnmore' %}" style="color: white;"
+    onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">Learn More</a></button>
+    
+    <h1 style="text-align: center; margin-top: 50px;">Educational content</h1>
+
+    <div style="display: flex; justify-content: center; align-items: center; text-align: center;">
+        <div style="  width: 300px;
+        height: 300px;
+        padding: 20px;
+        background-color: #f0f0f0;;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+        border-radius: 10px;
+        overflow: auto; margin: 20px;">
+         <h2>Mobile phones</h2>
+         <p>The growing amount of electronic waste (e-waste) has become a significant environmental
+              concern worldwide. Improper disposal of electronic devices contributes to hazardous waste 
+              and environmental pollution, impacting both land and water sources. E-waste contains toxic 
+              substances like lead, mercury, and cadmium, which can leach into the environment, causing 
+              long-term damage to ecosystems and human health. With rapid advancements in technology, 
+              people are constantly 
+             upgrading their electronic devices, which leads to an increase in e-waste.</p>
+        </div>
+
+        <div style="  width: 300px;
+        height: 300px;
+        padding: 20px;
+        background-color: #f0f0f0;;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+        border-radius: 10px;
+        overflow: auto; margin: 20px;">
+         <h2>Laptops</h2>
+         <p>The growing amount of electronic waste (e-waste) has become a significant environmental
+              concern worldwide. Improper disposal of electronic devices contributes to hazardous waste 
+              and environmental pollution, impacting both land and water sources. E-waste contains toxic 
+              substances like lead, mercury, and cadmium, which can leach into the environment, causing 
+              long-term damage to ecosystems and human health. With rapid advancements in technology, 
+              people are constantly 
+             upgrading their electronic devices, which leads to an increase in e-waste.</p>
+        </div>
+
+        <div style="  width: 300px;
+        height: 300px;
+        padding: 20px;
+        background-color: #f0f0f0;;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+        border-radius: 10px;
+        overflow: auto; margin: 20px;">
+         <h2>Tablet</h2>
+         <p>The growing amount of electronic waste (e-waste) has become a significant environmental
+              concern worldwide. Improper disposal of electronic devices contributes to hazardous waste 
+              and environmental pollution, impacting both land and water sources. E-waste contains toxic 
+              substances like lead, mercury, and cadmium, which can leach into the environment, causing 
+              long-term damage to ecosystems and human health. With rapid advancements in technology, 
+              people are constantly 
+             upgrading their electronic devices, which leads to an increase in e-waste.</p>
+        </div>
+    </div>
+
     </section>
 
     <footer style="background-color: green; color: white;">
