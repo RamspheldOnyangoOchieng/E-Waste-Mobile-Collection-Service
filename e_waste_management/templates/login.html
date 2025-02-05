@@ -5,8 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login page</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
+
+    <header>
+        <div class="header" style=" padding-top: 10px; padding-bottom: 10px;">
+            <img src="{% static 'images/ewaste_logo.jpg' %}" alt="My Image" class="image">
+        
+               
+                <nav>
+                    <ul class="menu">
+                        <li><a href="{% url 'home' %}" style="margin-right: 10px;
+                        margin-left: 750px; color: white;"
+                        onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">Home</a></li>
+                        <li><a href="{% url 'about' %}" style="margin-right: 10px; color: white;"
+                            onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">About Us</a></li>
+                        <li><a href="{% url 'learnmore' %}" style="margin-right: 10px; color: white;"
+                            onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">How it works</a></li>
+                        <li><a href="{% url 'login' %}" style="margin-right: 10px; color: white;"
+                            onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">Login</a></li>
+                        <li><a href="{% url 'register' %}" style="margin-right: 10px; color: white;"
+                            onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">Register</a></li>
+                        <li><a href="{% url 'contactus' %}" style="margin-right: 10px; color: white;"
+                            onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">Contact Us</a></li>
+                    </ul>
+                </nav>
+        </div>
+            </header>
+        
 
 <div >
     <h1>Login</h1>

@@ -20,7 +20,7 @@ body{
     font-size: 30px;
     font-weight: bold;
     white-space: nowrap; /* Prevents text from wrapping */
-    animation: moveText 5s linear infinite; /* Animation applied */
+    animation: moveText 15s linear infinite; /* Animation applied */
   }
   @keyframes moveText {
     0% {
