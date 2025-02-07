@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login page</title>
+    <title>E-Waste | Login</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
@@ -36,14 +36,24 @@
         
 
 <div >
-    <h1>Login</h1>
+    <h1 style="margin-left: 650px;">Login</h1>
     <form action="#" method="POST">
-        <p><input type="text" placeholder="Username" name="username" required></p>
-        <p><input type="password" placeholder="Password" name="password" required></p>
-        <button type="submit" class="btn">Login</button>
-        <p><a href="{% url 'resetpassword' %}">Forgot Password?</a></p>
-        <p>Don't have an account?</p>
-        <a href="{% url 'register' %}">Register</a>
+        <p style="text-align: center;"><input 
+            style="width: 400px; height: 30px; font-size: 15px;" type="text" placeholder="Username" 
+            name="username"required ></p>
+
+        <p style="text-align: center;"><input 
+            style="width: 400px; height: 30px; font-size: 15px;" type="password" placeholder="Password" 
+            name="password" required></p>
+
+        <button type="submit" class="btn" style="margin-left: 650px; color: white;
+        border: none; background-color: rgb(0, 140, 255);padding: 10px; border-radius: 50px; 
+        font-size: 15px;"
+        onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">Login</button>
+
+        <p style="text-align: center;"><a href="{% url 'resetpassword' %}">Forgot Password?</a></p>
+        <p style="text-align: center;">Don't have an account?</p>
+        <a href="{% url 'register' %}" style="margin-left: 650px;">Register</a>
     </form>
 </div>
 
