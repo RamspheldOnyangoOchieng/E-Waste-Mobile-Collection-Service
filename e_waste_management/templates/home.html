@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Waste | Home</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+
 </head>
 <body>
     <header>
@@ -93,9 +95,17 @@
         </div>
     </div>
 
-    <span class="arrow wobble"></span>
+    <div style=" 
+    font-size: 3rem; 
+    color: rgb(24, 179, 70); 
+    animation: bounce 1.5s infinite; 
+    display: inline-block;
+    margin-left: 673px;
+"> &#x2193; <!-- Down arrow Unicode character -->
+    </div>
+
     <button style="padding: 10px; border-radius: 50px;
-    border: none; background-color: rgb(0, 140, 255); margin-left: 640px; margin-top: 70px;">
+    border: none; background-color: rgb(0, 140, 255); margin-left: 640px; margin-top: 10px;">
     <a href="{% url 'learnmore' %}" style="color: white;"
     onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">Learn More</a></button>
     

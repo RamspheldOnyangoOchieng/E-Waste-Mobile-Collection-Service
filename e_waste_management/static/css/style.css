@@ -29,3 +29,24 @@ body{
     100% {
       transform: translateX(-100%); /* End at left */
     }}
+
+    /* Initial style for the button */
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+      margin: 0;
+  }
+      /* Define the keyframe animation in a <style> block */
+      @keyframes bounce {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-20px);
+        }
+    }
+  
