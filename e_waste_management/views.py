@@ -23,3 +23,6 @@ def contactus(request):
 
 def resetpassword(request):
     return render(request, 'resetpassword.html')
+
+def track(request):
+    return render(request, 'track.html')
