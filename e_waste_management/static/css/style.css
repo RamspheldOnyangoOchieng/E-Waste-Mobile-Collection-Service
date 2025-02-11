@@ -3,7 +3,7 @@ body{
 }
 .header{
     display: flex;
-    background-color: green;
+    background-color: rgb(3, 61, 148);
 }
 .image{
     width: 100px;

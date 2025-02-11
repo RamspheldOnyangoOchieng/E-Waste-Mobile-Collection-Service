@@ -8,50 +8,49 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
+    <div style="background-color: #f5f5f5; padding-top: 20px;padding-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px; border-radius: 10px; width: 500px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin: 0 auto; margin-top: 100px; margin-bottom: 50px;">
 
-    <header>
-        <div class="header" style=" padding-top: 10px; padding-bottom: 10px;">
-            <img src="{% static 'images/ewaste_logo.jpg' %}" alt="My Image" class="image">
-        
-               
-                <nav>
-                    <ul class="menu">
-                        <li><a href="{% url 'home' %}" style="margin-right: 10px;
-                        margin-left: 750px; color: white;"
-                        onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">Home</a></li>
-                        <li><a href="{% url 'about' %}" style="margin-right: 10px; color: white;"
-                            onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">About Us</a></li>
-                        <li><a href="{% url 'learnmore' %}" style="margin-right: 10px; color: white;"
-                            onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">How it works</a></li>
-                        <li><a href="{% url 'login' %}" style="margin-right: 10px; color: white;"
-                            onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">Login</a></li>
-                        <li><a href="{% url 'register' %}" style="margin-right: 10px; color: white;"
-                            onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">Register</a></li>
-                        <li><a href="{% url 'contactus' %}" style="margin-right: 10px; color: white;"
-                            onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">Contact Us</a></li>
-                    </ul>
-                </nav>
-        </div>
-            </header>
-        
-    <h1 style="margin-left: 650px;">Register</h1>
-    <form action="#" method="POST">
-        <p style="text-align: center;"><input style="width: 400px; height: 30px; font-size: 15px;" 
-            type="text" placeholder="Username" name="username" required></p>
+        <h1 style="text-align: center;">Register</h1>
+        <form action="#" method="POST">
+            <p style="text-align: center;"><input style="width: 400px; height: 30px; font-size: 15px;" 
+                type="text" placeholder="Username" name="username" required></p>
+    
+            <p style="text-align: center;"><input style="width: 400px; height: 30px; font-size: 15px;"
+                 type="password" placeholder="Password" name="password" required></p>
+    
+            <p style="text-align: center;"><input input style="width: 400px; height: 30px; font-size: 15px;"
+                 type="password" placeholder="Confirm Password" name="password" required></p>
+    
+            <button type="submit" class="btn" style="margin-left: 200px; color: white;
+            border: none; background-color: rgb(0, 140, 255);padding: 10px; border-radius: 50px; 
+            font-size: 15px;"
+            onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">Register</button>
+    
+            <p style="text-align: center;">Already have an account?</p>
+            <a href="{% url 'login' %}" style="margin-left: 220px;">Login</a>
 
-        <p style="text-align: center;"><input style="width: 400px; height: 30px; font-size: 15px;"
-             type="password" placeholder="Password" name="password" required></p>
-
-        <p style="text-align: center;"><input input style="width: 400px; height: 30px; font-size: 15px;"
-             type="password" placeholder="Confirm Password" name="password" required></p>
-
-        <button type="submit" class="btn" style="margin-left: 650px; color: white;
-        border: none; background-color: rgb(0, 140, 255);padding: 10px; border-radius: 50px; 
-        font-size: 15px;"
-        onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">Register</button>
-
-        <p style="text-align: center;">Already have an account?</p>
-        <a href="{% url 'login' %}" style="margin-left: 650px;">Login</a>
-    </form>
+            <p><button style="margin-top: 30px; margin-left: 180px; border-radius: 50px;
+                padding: 5px; background-color: white;">
+                <img src="{% static 'images/Google.jpg' %}" alt="My Image" 
+                style="    
+                width: 20px;
+                height: 20px;
+                border-radius: 50px;
+                margin-left: 10px;">
+                Continue With Google</button></p>
+                <p><button style="margin-top: 10px; margin-left: 180px; border-radius: 50px;
+                padding: 5px; background-color: white;">
+                <img src="{% static 'images/Facebook.jpg' %}" alt="My Image" 
+                style="    
+                width: 30px;
+                height: 30px;
+                border-radius: 50px;
+                margin-left: 10px;">
+                Continue with Facebook</button></p>
+        </form>
+    </div>
 </body>
 </html>
