@@ -5,44 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Waste | Contact Us</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/contactus.css' %}">
 </head>
 <body>
 
     <header>
-        <div class="header" style=" padding-top: 10px; padding-bottom: 10px;">
+        <div class="header">
             <img src="{% static 'images/ewaste_logo.jpg' %}" alt="My Image" class="image">
-        
-               
-                <nav>
+               <nav>
                     <ul class="menu">
-                        <li><a href="{% url 'home' %}" style="margin-right: 20px; text-decoration: none;;
-                        margin-left: 750px; color: white;"
-                        onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">Home</a></li>
-                        <li><a href="{% url 'about' %}" style="margin-right: 20px; text-decoration: none; color: white;"
-                            onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">About Us</a></li>
-                        <li><a href="{% url 'learnmore' %}" style="margin-right: 20px; text-decoration: none; color: white;"
-                            onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">How it works</a></li>
-                        <li><a href="{% url 'login' %}" style="margin-right: 20px; text-decoration: none; color: white;"
-                            onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">Login</a></li>
-                        <li><a href="{% url 'register' %}" style="margin-right: 20px; text-decoration: none; color: white;"
-                            onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">Register</a></li>
-                        <li><a href="{% url 'contactus' %}" style="margin-right: 5px; text-decoration: none; color: white;"
-                            onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">Contact Us</a></li>
+                        <li><a class="home" href="{% url 'home' %}">Home</a></li>
+                        <li><a class="about" href="{% url 'about' %}">About Us</a></li>
+                        <li><a class="works" href="{% url 'learnmore' %}">How it works</a></li>
+                        <li><a class="login" href="{% url 'login' %}">Login</a></li>
+                        <li><a class="register" href="{% url 'register' %}">Register</a></li>
+                        <li><a class="contact" href="{% url 'contactus' %}">Contact Us</a></li>
                     </ul>
                 </nav>
         </div>
             </header>
         
-            <div style="display: flex;">
-                <div style="margin-left: 400px;">
+            <div class="style1">
+                <div class="style2">
                     <h3>Contacts</h3>
                     <p>Phone: 0781567890</p>
                     <p>Phone: 0722345678</p>
                     <p>Location: Nyeri, Kenya</p>
                     <p>Email: enviroServeKenyaCompanyLTD@gmail.com</p>
                     </div>
-                   <div style="margin-left: 200px;">
+                   <div class="style3">
                     <h3>Follow Us</h3>
                     <ul>
                         <li>Facebook</li>

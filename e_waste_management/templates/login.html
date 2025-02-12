@@ -5,50 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Waste | Login</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
 </head>
 <body>        
 
-        <div style="background-color: #f5f5f5; padding-top: 20px;padding-bottom: 100px;
-        padding-left: 20px;
-        padding-right: 20px; border-radius: 10px; width: 500px; 
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin: 0 auto; margin-top: 100px; margin-bottom: 50px;">
-            <h1 style="text-align: center;">Login</h1>
+        <div class="style1">
+            <h1 class="h1">Login</h1>
             <form action="#" method="POST">
-                <p style="text-align: center;"><input 
-                    style="width: 400px; height: 30px; font-size: 15px;" type="text" placeholder="Username" 
+                <p class="style2"><input class="style3" type="text" placeholder="Username" 
                     name="username"required ></p>
         
-                <p style="text-align: center;"><input 
-                    style="width: 400px; height: 30px; font-size: 15px;" type="password" placeholder="Password" 
+                <p class="style4"><input class="style5" type="password" placeholder="Password" 
                     name="password" required></p>
         
-                <button type="submit" class="btn" style="margin-left: 220px; color: white;
-                border: none; background-color: rgb(0, 140, 255);padding: 10px; border-radius: 50px; 
-                font-size: 15px;"
-                onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">Login</button>
+                <button type="submit" class="btn">Login</button>
         
-                <p style="text-align: center;"><a href="{% url 'resetpassword' %}">Forgot Password?</a></p>
-                <p style="text-align: center;">Don't have an account?</p>
-                <a href="{% url 'register' %}" style="margin-left: 220px;">Register</a>
+                <p class="style6"><a href="{% url 'resetpassword' %}">Forgot Password?</a></p>
 
-                <p><button style="margin-top: 30px; margin-left: 180px; border-radius: 50px;
-                padding: 5px; background-color: white;">
-                <img src="{% static 'images/Google.jpg' %}" alt="My Image" 
-                style="    
-                width: 20px;
-                height: 20px;
-                border-radius: 50px;
-                margin-left: 10px;">
+                <p class="style7">Don't have an account?</p>
+
+                <a href="{% url 'register' %}" class="style8">Register</a>
+
+                <p><button class="style9">
+                <img src="{% static 'images/Google.jpg' %}" alt="My Image" class="style10">
                 Continue With Google</button></p>
-                <p><button style="margin-top: 10px; margin-left: 180px; border-radius: 50px;
-                padding: 5px; background-color: white;">
-                <img src="{% static 'images/Facebook.jpg' %}" alt="My Image" 
-                style="    
-                width: 30px;
-                height: 30px;
-                border-radius: 50px;
-                margin-left: 10px;">
+
+                <p><button class="style11">
+                <img src="{% static 'images/Facebook.jpg' %}" alt="My Image" class="style12">
                 Continue with Facebook</button></p>
             </form>
         </div>

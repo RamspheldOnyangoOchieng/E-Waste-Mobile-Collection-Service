@@ -5,75 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Waste | Home</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
     <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
 
 </head>
 <body>
     <header>
-<div class="header" style=" padding-top: 10px; padding-bottom: 10px;">
-    <img src="{% static 'images/ewaste_logo.jpg' %}" alt="My Image" class="image">
-
-       
-        <nav>
-            <ul class="menu">
-                <li><a href="{% url 'home' %}" style="margin-right: 20px;
-                margin-left: 750px; color: white; text-decoration: none;"
-                onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">Home</a></li>
-                <li><a href="{% url 'about' %}" style=" color: white; margin-right: 20px; text-decoration: none;"
-                    onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">About Us</a></li>
-                <li><a href="{% url 'learnmore' %}" style="margin-right: 20px; color: white; text-decoration: none;"
-                    onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">How it works</a></li>
-                <li><a href="{% url 'login' %}" style="margin-right: 20px; color: white; text-decoration: none;"
-                    onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">Login</a></li>
-                <li><a href="{% url 'register' %}" style="margin-right: 20px; color: white; text-decoration: none;"
-                    onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">Register</a></li>
-                <li><a href="{% url 'contactus' %}" style="margin-right: 5px; color: white; text-decoration: none;"
-                    onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">Contact Us</a></li>
-            </ul>
-        </nav>
-</div>
-    </header>
+        <div class="header">
+            <img src="{% static 'images/ewaste_logo.jpg' %}" alt="My Image" class="image">
+               <nav>
+                    <ul class="menu">
+                        <li><a class="home" href="{% url 'home' %}">Home</a></li>
+                        <li><a class="about" href="{% url 'about' %}">About Us</a></li>
+                        <li><a class="works" href="{% url 'learnmore' %}">How it works</a></li>
+                        <li><a class="login" href="{% url 'login' %}">Login</a></li>
+                        <li><a class="register" href="{% url 'register' %}">Register</a></li>
+                        <li><a class="contact" href="{% url 'contactus' %}">Contact Us</a></li>
+                    </ul>
+                </nav>
+        </div>
+            </header>
 
     <section>
         
-        <p style="font-size: 50px; color: rgb(10, 207, 10);" class="moving-text"
-        >Welcome to EnviroServe Kenya Company LTD</p>
+        <p class="moving-text">Welcome to EnviroServe Kenya Company LTD</p>
         
         <div>
 
-            <button style="padding: 10px; border-radius: 50px; margin-left: 285px;
-            border: none; background-color: rgb(0, 140, 255); "><a href="{% url 'pickup' %}" 
-            style="color: white;"
-            onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">Schedule a Pickup</a></button>
+            <button class="schedule"><a class="pickup" href="{% url 'pickup' %}" >Schedule a Pickup</a></button>
 
-            <button style="padding: 10px; border-radius: 50px; margin-left: 540px;
-            border: none; background-color: rgb(0, 140, 255); "><a href="{% url 'track' %}" 
-            style="color: white;"
-            onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">Track recycling</a></button>
+            <button class="track"><a class="recycle" href="{% url 'track' %}" >Track recycling</a></button>
         </div>
 
-        <div style="display: flex; display: flex; justify-content: center;
-         align-items: center; text-align: center;">
-            <div style="  width: 300px;
-            height: 190px;
-            padding: 20px;
-            background-color: #f0f0f0;;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
-            border-radius: 10px;
-            overflow: auto; margin: 20px;">
+        <div class="style1">
+            <div  class="style2">
                 <h3>Schedule a Pickup</h3>
                 <p> This button allows users to request an e-waste pickup service from their location. 
                     It links to a form where users can provide details like their address, 
                     contact information, type of electronic waste, and preferred pickup date.</p>
             </div>
 
-            <div style="display: flex; justify-content: center; align-items: center; text-align: center; ">
-                <div style="display: flex; justify-content: center; align-items: center;  margin: 20px;">
-                    <div style="width: 200px; height: 200px; border-radius: 50%; 
-                    background-color: #f0f0f0; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); display: flex; 
-                    justify-content: center; align-items: center; text-align: center; padding: 20px;">
-                    <div>     <p>Overview of the service’s benefits:</p>
+            <div class="style3">
+                <div class="style4">
+                    <div class="style5">
+                    <div>     
+                        <p>Overview of the service’s benefits:</p>
                         <ul>
                             <li> Convenient</li>
                             <li>Eco-friendly</li>
@@ -82,13 +58,7 @@
                     </div>
                 </div>
 
-                <div style="width: 300px;
-            height: 190px;
-            padding: 20px;
-            background-color: #f0f0f0;;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
-            border-radius: 10px;
-            overflow: auto; margin: 20px;">
+                <div class="style6">
                     <h3>Track recycling</h3>
                     <p> This button allows users to monitor the status of their e-waste collection requests. 
                         Once a request has been made, users can click this button to check where their e-waste is in the 
@@ -97,30 +67,15 @@
         </div>
     </div>
 
-    <div style=" 
-    font-size: 3rem; 
-    color: rgb(24, 179, 70); 
-    animation: bounce 1.5s infinite; 
-    display: inline-block;
-    margin-left: 673px;
-"> &#x2193; <!-- Down arrow Unicode character -->
+    <div class="style7"> &#x2193; <!-- Down arrow Unicode character -->
     </div>
 
-    <button style="padding: 10px; border-radius: 50px;
-    border: none; background-color: rgb(0, 140, 255); margin-left: 640px; margin-top: 10px;">
-    <a href="{% url 'learnmore' %}" style="color: white;"
-    onmouseover="this.style.color='red';" onmouseout="this.style.color='white';">Learn More</a></button>
+    <button class="style8"><a class="learn" href="{% url 'learnmore' %}">Learn More</a></button>
     
-    <h1 style="text-align: center; margin-top: 50px;">Educational content</h1>
+    <h1 class="style9">Educational content</h1>
 
-    <div style="display: flex; justify-content: center; align-items: center; text-align: center;">
-        <div style="  width: 300px;
-        height: 300px;
-        padding: 20px;
-        background-color: #f0f0f0;;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
-        border-radius: 10px;
-        overflow: auto; margin: 20px;">
+    <div class="style10">
+        <div class="style11">
          <h2>Mobile phones</h2>
          <p>The growing amount of electronic waste (e-waste) has become a significant environmental
               concern worldwide. Improper disposal of electronic devices contributes to hazardous waste 
@@ -131,13 +86,7 @@
              upgrading their electronic devices, which leads to an increase in e-waste.</p>
         </div>
 
-        <div style="  width: 300px;
-        height: 300px;
-        padding: 20px;
-        background-color: #f0f0f0;;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
-        border-radius: 10px;
-        overflow: auto; margin: 20px;">
+        <div class="style12">
          <h2>Laptops</h2>
          <p>The growing amount of electronic waste (e-waste) has become a significant environmental
               concern worldwide. Improper disposal of electronic devices contributes to hazardous waste 
@@ -148,13 +97,7 @@
              upgrading their electronic devices, which leads to an increase in e-waste.</p>
         </div>
 
-        <div style="  width: 300px;
-        height: 300px;
-        padding: 20px;
-        background-color: #f0f0f0;;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
-        border-radius: 10px;
-        overflow: auto; margin: 20px;">
+        <div class="style13">
          <h2>Tablet</h2>
          <p>The growing amount of electronic waste (e-waste) has become a significant environmental
               concern worldwide. Improper disposal of electronic devices contributes to hazardous waste 
@@ -168,16 +111,16 @@
 
     </section>
 
-    <footer style="background-color: green; color: white;">
-        <div style="display: flex;">
-            <div style="margin-left: 400px;">
+    <footer class="footer">
+        <div class="div1">
+            <div class="div2">
                 <h3>Contacts</h3>
                 <p>Phone: 0781567890</p>
                 <p>Phone: 0722345678</p>
                 <p>Location: Nyeri, Kenya</p>
                 <p>Email: enviroServeKenyaCompanyLTD@gmail.com</p>
                 </div>
-               <div style="margin-left: 200px;">
+               <div class="div3">
                 <h3>Follow Us</h3>
                 <ul>
                     <li>Facebook</li>
@@ -188,8 +131,7 @@
                </div>
         </div>
 
-        <p style="text-align: center; background-color: rgb(48, 45, 45); 
-        height: 50px; padding-top: 30px;">&copy; 2025 EnviroServe Kenya. All Rights Reserved.</p>
+        <p class="copyright">&copy; 2025 EnviroServe Kenya. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
