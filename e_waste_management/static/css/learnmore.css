@@ -7,9 +7,13 @@ body{
     display: flex;
     background-color: rgb(3, 61, 148);
 }
+
+h1{
+    margin-left: 30px;
+}
 .image{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50px;
     margin-left: 10px;
 }
@@ -32,6 +36,49 @@ body{
 .home:hover, .about:hover, .works:hover, .login:hover, .register:hover, .contact:hover{
     color: red;
 } 
+
+.divisions{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* space between boxes */
+    padding: 20px;
+}
+.box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+ .img1{
+    width: 80px;
+    height: 80px;
+ } 
+ .img2{
+    width: 80px;
+    height: 80px;
+ }
+ .img3{
+    width: 80px;
+    height: 80px;
+ }
+ .img4{
+    width: 80px;
+    height: 80px;
+ }
+ .img5{
+    width: 80px;
+    height: 80px;
+ }
+ .img6{
+    width: 80px;
+    height: 80px;
+ }
+ .img7{
+    width: 80px;
+    height: 80px;
+ }
+ 
 .footer{
     background-color: green; color: white; margin-top: 80px;
 }
@@ -47,6 +94,6 @@ body{
 .copyright{
     text-align: center; 
     background-color: rgb(48, 45, 45); 
-    height: 50px; 
-    padding-top: 30px;
+    height: 30px; 
+    padding-top: 10px;
 }

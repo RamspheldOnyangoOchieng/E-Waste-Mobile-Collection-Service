@@ -7,11 +7,29 @@ body{
     display: flex;
     background-color: rgb(3, 61, 148);
 }
+h1{
+    margin-left: 150px;
+}
 .image{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50px;
     margin-left: 10px;
+}
+.info{
+    display: flex;
+}
+.image2{
+    width: 400px;
+    height: 400px;
+}
+.container{
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    margin-left: 100px;
+    margin-right: 50px;
+    margin-top: 50px;
 }
 .menu{
     display: flex;
@@ -47,6 +65,6 @@ body{
 .copyright{
     text-align: center; 
     background-color: rgb(48, 45, 45); 
-    height: 50px; 
-    padding-top: 30px;
+    height: 30px; 
+    padding-top: 10px;
 }

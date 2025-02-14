@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="{% static 'css/contactus.css' %}">
 </head>
 <body>
-
-    <header>
+ <header>
         <div class="header">
             <img src="{% static 'images/ewaste_logo.jpg' %}" alt="My Image" class="image">
                <nav>
@@ -23,27 +22,61 @@
                     </ul>
                 </nav>
         </div>
-            </header>
+</header>
+
+    <div class="container">
+        <h4>WANT TO TALK TO US</h4>
+        <h1>REQUEST A CALL BACK</h1>
+        <form id="callbackForm">
+            <input type="text" id="name" name="name" placeholder="Name" required>
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            <input type="email" id="email" name="email" placeholder="E-Mail" required>
+            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+            <textarea id="message" name="message" placeholder="Your Message Here"></textarea>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="div1">
+            <div class="div2">
+                <h3>Contacts</h3>
+                <p>Phone: 0781567890</p>
+                <p>Phone: 0722345678</p>
+                <p>Location: Nyeri, Kenya</p>
+                <p>Email: enviroServeKenyaCompanyLTD@gmail.com</p>
+                </div>
+               <div class="div3">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>LinkedIn</li>
+                </ul>
+               </div>
+        </div>
+
+        <p class="copyright">&copy; 2025 EnviroServe Kenya. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("callbackForm").addEventListener("submit", function(event) {
+        event.preventDefault();
         
-            <div class="style1">
-                <div class="style2">
-                    <h3>Contacts</h3>
-                    <p>Phone: 0781567890</p>
-                    <p>Phone: 0722345678</p>
-                    <p>Location: Nyeri, Kenya</p>
-                    <p>Email: enviroServeKenyaCompanyLTD@gmail.com</p>
-                    </div>
-                   <div class="style3">
-                    <h3>Follow Us</h3>
-                    <ul>
-                        <li>Facebook</li>
-                        <li>Twitter</li>
-                        <li>Instagram</li>
-                        <li>LinkedIn</li>
-                    </ul>
-                   </div>
-            </div>
-    
-       
+        let name = document.getElementById("name").value;
+        let subject = document.getElementById("subject").value;
+        let email = document.getElementById("email").value;
+        let phone = document.getElementById("phone").value;
+        let message = document.getElementById("message").value;
+
+        if(name && subject && email && phone) {
+            alert("Your request has been submitted successfully!");
+            document.getElementById("callbackForm").reset();
+        } else {
+            alert("Please fill in all required fields.");
+        }
+    });
+    </script>
 </body>
 </html>

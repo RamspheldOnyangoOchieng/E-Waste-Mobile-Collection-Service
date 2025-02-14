@@ -8,8 +8,8 @@ body{
     background-color: rgb(3, 61, 148);
 }
 .image{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50px;
     margin-left: 10px;
 }
@@ -47,6 +47,99 @@ body{
     100% {
       transform: translateX(-100%); /* End at left */
     }}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%; /* Increase the width to 120%, adjust this value as needed */
+    height: auto; 
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+.carousel-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+    object-fit: contain;
+    margin-bottom: 20px;
+    }
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%; /* Increase the width to 120%, adjust this value as needed */
+    height: auto; 
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
   
 .schedule {
     padding: 10px; 
@@ -91,25 +184,6 @@ body{
 }
 .pickup:hover, .recycle:hover{
     color:red;
-}
-
-.footer{
-    background-color: green; color: white; margin-top: 80px;
-}
-.div1{
-    display: flex;
-}
-.div2{
-    margin-left: 400px;
-}
-.div3{
-    margin-left: 200px;
-}
-.copyright{
-    text-align: center; 
-    background-color: rgb(48, 45, 45); 
-    height: 50px; 
-    padding-top: 30px;
 }
 .style1{
     display: flex; 
@@ -243,4 +317,23 @@ body{
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
     border-radius: 10px;
     overflow: auto; margin: 20px;
+}
+
+.footer{
+    background-color: green; color: white; margin-top: 80px;
+}
+.div1{
+    display: flex;
+}
+.div2{
+    margin-left: 400px;
+}
+.div3{
+    margin-left: 200px;
+}
+.copyright{
+    text-align: center; 
+    background-color: rgb(48, 45, 45); 
+    height: 30px; 
+    padding-top: 10px;
 }
